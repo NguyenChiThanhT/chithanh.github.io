@@ -119,6 +119,9 @@
   function render(photos) {
     const main = parseDate(cfg.date);
     const mapQuery = encodeURIComponent(cfg.venue.mapQuery || cfg.venue.address);
+    // Nhúng thẳng /maps/embed: link maps?q=…&output=embed chuyển hướng qua một bước có X-Frame-Options,
+    // trình duyệt trong app trên Android (Zalo, Messenger…) chặn khung đó (ERR_BLOCKED_BY_RESPONSE).
+    const mapEmbed = `https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1s${mapQuery}`;
     const dress = cfg.dressCode || [];
     const [ceremony, ...moreEvents] = cfg.events;
 
@@ -182,7 +185,7 @@
         <h2 class="title reveal">Địa điểm tổ chức</h2>
         <p class="venue-name reveal">${esc(cfg.venue.name)}</p>
         <p class="venue-addr reveal">${esc(cfg.venue.address)}</p>
-        <div class="map reveal"><iframe title="Bản đồ đường đi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${mapQuery}&output=embed"></iframe></div>
+        <div class="map reveal"><iframe title="Bản đồ đường đi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="${mapEmbed}"></iframe></div>
         <a class="dir-link reveal" href="https://www.google.com/maps/dir/?api=1&destination=${mapQuery}" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3 3 10.5l7.5 3 3 7.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Chỉ đường
         </a>
