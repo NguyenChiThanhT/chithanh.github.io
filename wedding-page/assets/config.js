@@ -12,7 +12,7 @@ window.WEDDING = {
   },
   bride: {
     name: 'Hoài Ngọc',
-    fullName: 'Lê Trường Hoài Ngọc',
+    fullName: 'Lê Trương Hoài Ngọc',
     rank: '',                       // ví dụ 'Út Nữ'; trống thì ghi 'Cô dâu'
     father: 'Ông Nguyễn Văn Tám',
     mother: 'Bà Trương Thị Ngọc Đạt',

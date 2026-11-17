@@ -45,7 +45,7 @@
   const flower = cls => `<span class="flower ${cls}" aria-hidden="true"><img src="${THEME}flower2-decoration.webp" alt=""></span>`;
   const castle = style => `<img class="castle" src="${THEME}castle-background.webp" alt="" aria-hidden="true" style="${style}">`;
   const icon = name => `<img class="ico" src="${THEME}${esc(name)}.webp" alt="" aria-hidden="true">`;
-  const roleOf = p => p.rank || (p === cfg.groom ? 'Chú rể' : 'Cô dâu');
+  const roleOf = p => p.rank || (p === cfg.groom ? 'Trưởng nam' : 'Trưởng nữ');
   const sideOf = p => (p === cfg.groom ? 'Nhà trai' : 'Nhà gái');
   // Chữ cái đầu của tên gọi (từ cuối cùng), dùng cho con dấu sáp: "Chí Thanh" → "T".
   const initial = p => p.name.trim().split(/\s+/).pop().charAt(0).toUpperCase();
