@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Ứng dụng chia sẻ link (Zalo, Messenger) đọc 3 dòng dưới, không đọc config.js: nhớ sửa tay khi đổi tên. -->
+  <title>Chí Thanh &amp; Hoài Ngọc · Thiệp cưới</title>
+  <meta name="description" content="Trân trọng kính mời bạn tới chung vui trong ngày trọng đại của chúng tôi.">
+  <meta property="og:title" content="Chí Thanh &amp; Hoài Ngọc · Thiệp cưới">
+  <meta name="theme-color" content="#511419">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=The+Nautigal:wght@400;700&family=Ms+Madi&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:wght@600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="locked">
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 5 6.4 5c2 0 3.6 1.1 4.6 2.6l1 1.4 1-1.4C14 6.1 15.6 5 17.6 5 21 5 23.1 8.4 21.6 11.8 19.5 16.4 12 21 12 21z"/>
+    </symbol>
+  </svg>
+
+  <div id="petals" aria-hidden="true"></div>
+  <div id="sparks" aria-hidden="true"></div>
+
+  <div id="intro">
+    <div class="cover">
+      <div class="cover-clip" aria-hidden="true">
+        <img class="cover-flower cover-flower-tl" src="image/mau_do_dam/flower2-decoration.webp" alt="">
+        <img class="cover-flower cover-flower-br" src="image/mau_do_dam/flower2-decoration.webp" alt="">
+      </div>
+      <span class="seal cover-seal" aria-hidden="true" data-bind="initials"></span>
+      <div class="cover-body">
+        <h1 class="cover-names"><span data-bind="first"></span><small>&amp;</small><span data-bind="second"></span></h1>
+        <p class="cover-rule" aria-hidden="true"><i></i>❦<i></i></p>
+        <p class="cover-date" data-bind="dateLong"></p>
+        <p class="cover-invite no-guest">Trân trọng kính mời</p>
+        <p class="cover-invite if-guest" hidden>Thân mời</p>
+        <p class="cover-guest if-guest" hidden data-bind="guest"></p>
+        <button id="open-btn" class="open-btn" type="button">Mở thiệp</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="card"></main>
+
+  <button id="music-btn" class="music-btn" type="button" aria-label="Bật/tắt nhạc" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18.5a2.5 2.5 0 1 1-2-2.45V5l11-2v12.5a2.5 2.5 0 1 1-2-2.45V7.1L9 8.4z" fill="currentColor"/></svg>
+  </button>
+  <audio id="music" loop preload="none"></audio>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="Đóng">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Ảnh trước">‹</button>
+    <img alt="">
+    <button class="lb-nav lb-next" type="button" aria-label="Ảnh sau">›</button>
+    <p class="lb-count"></p>
+  </div>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/lunar.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
