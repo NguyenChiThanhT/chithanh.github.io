@@ -7,7 +7,7 @@ window.WEDDING = {
     fullName: 'Nguyễn Chí Thanh',
     rank: '',                       // vai trong nhà, ví dụ 'Trưởng Nam'; trống thì ghi 'Chú rể'
     father: 'Ông Nguyễn Huỳnh Hưng',
-    mother: 'Bà Phạm Thị Niểm',
+    mother: 'Bà Phạm Thị Niễm',
     address: 'Ấp Xuân Hòa 2, Xã Thuận Mỹ, Tỉnh Tây Ninh',
   },
   bride: {
