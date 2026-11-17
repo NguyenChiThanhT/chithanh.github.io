@@ -1,7 +1,7 @@
 # Thiệp cưới online
 
 Trang tĩnh thuần HTML/CSS/JS, không cần build, chạy được trên GitHub Pages. Giao diện tối giản tông đỏ đô
-(nền kem, thẻ đỏ đô, ảnh trang trí trong `image/mau_do_dam/`). Bản rồng phượng cũ được giữ ở `.ban-cu-rong-phuong/`.
+(nền kem, thẻ đỏ đô, ảnh trang trí trong `image/mau_do_dam/`).
 
 ## Thiệp nhà trai / nhà gái
 

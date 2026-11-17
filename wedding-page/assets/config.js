@@ -34,7 +34,7 @@ window.WEDDING = {
   venue: {
     name: 'Tư gia nhà trai',
     address: 'Ấp Xuân Hòa 2, Xã Thuận Mỹ, Tỉnh Tây Ninh',
-    mapQuery: '',                   // trống thì tìm bản đồ theo address; bản đồ sai chỗ thì dán tên/toạ độ đúng vào đây
+    mapQuery: '10.431670,106.572683', // trống thì tìm bản đồ theo address; bản đồ sai chỗ thì dán tên/toạ độ đúng vào đây
   },
 
   // icon (tuỳ chọn) hiện cạnh giờ: 'cake' bánh cưới, 'cook' bàn tiệc, 'camera' máy ảnh (ảnh trong image/mau_do_dam/).
@@ -77,7 +77,7 @@ window.WEDDING = {
     venue: {
       name: 'Tư gia nhà gái',
       address: 'Ấp Tây Hoà, Xã Kim Sơn, Tỉnh Đồng Tháp',
-      mapQuery: '',
+      mapQuery: '10.331077,106.264134',
     },
   },
 };
